@@ -42,11 +42,11 @@
         android:enabled="true"
         android:exported="false">
     </receiver>
-    <receiver
-        android:name=".NotificationEventReceiver"
-        android:enabled="true"
-        android:exported="false">
-    </receiver>
+
+
+
+
+
 
     <service
         android:name=".NotificationIntentService"
@@ -71,3 +71,4 @@
 </application>
 
 
+</manifest>
