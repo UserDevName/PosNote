@@ -1,13 +1,6 @@
 package com.shyomnience.dropof.posnote;
 
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
-import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.RemoteInput;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +8,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button button;
-    public static int NOTIFICATION_ID = 1;
+   public static int NOTIFICATION_ID = 1;
     public static final String KEY_NOTIFICATION_REPLY = "KEY_NOTIFICATION_REPLY";
 
     @Override
@@ -23,13 +16,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(buttonClickListener);
+     //   button = (Button) findViewById(R.id.button);
+      //  button.setOnClickListener(buttonClickListener);
 
 
     }
 
-    private View.OnClickListener buttonClickListener = new View.OnClickListener() {
+  /*  private View.OnClickListener buttonClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
 
@@ -73,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                     .setSmallIcon(android.R.drawable.ic_dialog_info)
                     .setContentTitle("Something important happened")
                     .setContentText("See the details")
-                  //  .setAutoCancel(true)
+                    .setAutoCancel(true)
                     .setOngoing(true)
                     .setPriority(Notification.PRIORITY_HIGH)
                     .setContentIntent(detailsPendingIntent)
@@ -83,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
             // Obtain NotificationManager system service in order to show the notification
 
-                   /*
+                  /*
                     .setStyle(new NotificationCompat.MessagingStyle("Me")
                             .setConversationTitle("Example Playground Chat")
                             .addMessage("Lorem", 1, null) // null means device's user
@@ -91,13 +84,13 @@ public class MainActivity extends AppCompatActivity {
                             .addMessage("dolor", 3, "Bot")
                             .addMessage("sit amet", 4, null));*/
 
-
+/*
             // Obtain NotificationManager system service in order to show the notification
             NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
             notificationManager.notify(NOTIFICATION_ID, mBuilder.build());
 
         }
-    };
+    };*/
 
 
 

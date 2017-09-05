@@ -11,6 +11,7 @@ import android.support.v4.app.RemoteInput;
 import static android.content.Context.NOTIFICATION_SERVICE;
 import static com.shyomnience.dropof.posnote.MainActivity.NOTIFICATION_ID;
 
+
 public class ReplyReceiver extends BroadcastReceiver {
     public ReplyReceiver() {
     }
